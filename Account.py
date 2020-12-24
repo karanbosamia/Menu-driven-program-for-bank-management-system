@@ -6,3 +6,8 @@ class Account:
         self._balance = balance
         print("Account created for " + self._name)
         self.display_account()
+    
+    def deposit(self, amount):
+        if amount > 0:
+            self._balance += amount
+            self.display_account()
