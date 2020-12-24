@@ -26,3 +26,10 @@ class Account:
         
     def display_account(self):
         print("Account name: {}\nAccount number: {}\nBalance: {}".format(self._name, self._acc_no, self._balance))
+
+        
+if __name__ == '__main__':
+    karan = Account(121412111241, "Karan", 2522)
+    karan.deposit(200)
+    karan.withdraw(2000)
+    karan.withdraw(723)
